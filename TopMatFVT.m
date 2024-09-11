@@ -1,5 +1,4 @@
 % TOPOLOGY OPTIMIZATION OF PERIODIC MATERIAL BY STANDARD FVT FORMULATION
-% BASED ON ENERGY-EQUIVALENCE
 function TopMatFVT(nx,ny,volfrac,penal,rfil,ft)
 %______________________________________________________________USER-DEFINED
 E0    = 1.0;                                                               % Young's modulus of solid material
