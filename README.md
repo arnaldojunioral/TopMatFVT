@@ -66,10 +66,13 @@ The table below summarizes the main input parameters considered in the simulatio
 | eta       | 1/3   | Damping factor |
 | move      | 0.2   | Move limit for design variable update |
 
-## 📘 Documentation  
+## 📘 Documentation
 
-The journal articles use **TopMatFVT** to generate the numerical examples presented.  
-For further details on the theoretical background, implementation, and validation, please refer to the article:
+For further details on the theoretical background and verification, please refer to the following articles:
+
+- **Santos Júnior, A.** & **Cavalcante, M. A. A.**, (2025). *Checkerboard-free topology optimization for cellular materials via the finite-volume theory*. *Optimization and Engineering*. [https://doi.org/10.1007/s11081-025-09988-7](https://doi.org/10.1007/s11081-025-09988-7)
+
+- **Santos Júnior, A.** & **Cavalcante, M. A. A.**, (2024). *Topology optimization of periodic cellular materials employing the finite-volume theory*. *Engineering Optimization*. [https://doi.org/10.1080/0305215X.2024.2379019](https://doi.org/10.1080/0305215X.2024.2379019)
 
 ----
 
@@ -89,7 +92,7 @@ For further details on the theoretical background, implementation, and validatio
     </td>
     <td align="center" valign="top">
       <strong>Poisson ratio minimization</strong><br>
-      <img width="300" height="300" alt="Poisson ratio minimization" src="https://github.com/user-attachments/assets/0756a229-cbe9-4301-9c0f-991c861e9062" />
+      <img width="300" height="300" alt="Poisson's ratio minimization" src="https://github.com/user-attachments/assets/0756a229-cbe9-4301-9c0f-991c861e9062" />
     </td>
   </tr>
 </table>
@@ -120,12 +123,16 @@ Project developed by:
 
 ## References
 
-The following table summarizes the four relevant references supporting the development of the proposed three-dimensional finite-volume theory. These works were selected based on their conceptual alignment with the present formulation, their methodological contributions, and their scientific impact.
+The following table summarizes the six relevant references supporting the development of the proposed three-dimensional finite-volume theory. These works were selected based on their conceptual alignment with the present formulation, their methodological contributions, and their scientific impact.
 
-| Rank | Reference                                                                                          | Relevance to the Study      | Scientific Impact | Justification                                                                                                                                                  |
-|------|----------------------------------------------------------------------------------------------------|-----------------------------|-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1    | Cavalcante, M.A.A., Pindera, M.-J. (2012a). *Generalized finite-volume theory for elastic analysis in solid mechanics.* Part I: Framework. *Journal of Applied Mechanics* | ⭐⭐⭐⭐⭐ | High              | Establishes the theoretical foundation of the generalized FVT used in this work. Introduces a novel framework that overcomes key challenges in solid mechanics modeling. |
-| 2    | Cavalcante, M.A.A., Pindera, M.-J. (2012b). *Generalized finite-volume theory for elastic analysis in solid mechanics.* Part II: Results. *Journal of Applied Mechanics* | ⭐⭐⭐⭐⭐ | High              | Complements Part I by validating the FVT framework through numerical results, demonstrating its accuracy and robustness for linear elasticity problems.          |
-| 3    | Cardiff, P., Demirdžić, I. (2021). *Thirty years of the finite volume method for solid mechanics.* *Archives of Computational Methods in Engineering* | ⭐⭐⭐⭐⭐ | Very High         | Offers a critical review of FVM developments, including FVT, positioning the current study within the broader trajectory of computational solid mechanics.       |
-| 4    | Araujo, M.V.O., Lages, E.N., Cavalcante, M.A.A. (2020). *Checkerboard-free topology optimization for compliance minimization applying the finite-volume theory.* *Mechanics Research Communications* | ⭐⭐⭐⭐ | Medium            | Demonstrates the applicability of FVT beyond basic elasticity problems, showcasing its potential in advanced structural optimization scenarios.                |
+| Rank | Reference | Relevance to the Study | Scientific Impact | Justification |
+|------|-----------|----------------------|-----------------|---------------|
+| 1    | Cavalcante, M.A.A., Pindera, M.-J. (2012a). *Generalized finite-volume theory for elastic stress analysis in solid mechanics.* Part I: Framework. *Journal of Applied Mechanics, Transactions ASME*, v. 79, p. 051006.| ⭐⭐⭐⭐⭐ | High | Establishes the theoretical foundation of the generalized FVT used in this work, introducing a novel framework that overcomes key challenges in solid mechanics modeling. |
+| 2    | Cavalcante, M.A.A., Pindera, M.-J.; Khatam, H. (2012). *Finite-volume micromechanics of periodic materials: Past, present and future.* *Composites: Part B*, v. 43, p. 2521–2543. | ⭐⭐⭐⭐⭐ | High | Reviews FVT for periodic materials, summarizing theory, applications, and state-of-the-art, directly relevant for model validation. |
+| 3    | Bendsøe, M. P.; Kikuchi, N. (1988). *Generating optimal topologies in structural design using a homogenization method.* *Computer Methods in Applied Mechanics and Engineering*, v. 71, p. 197–224. | ⭐⭐⭐⭐⭐ | Very High | Classic work in topology optimization using homogenization, introducing the approach foundational to modern topology optimization. |
+| 4    | Bendsøe, M. P.; Sigmund, O. (1999). *Material interpolation schemes in topology optimization.* *Archive of Applied Mechanics*, v. 69, p. 635–654. | ⭐⭐⭐⭐ | High | Discusses SIMP and general material interpolation schemes central to penalization strategies in topology optimization. |
+| 5    | Santos Júnior, A.; Cavalcante, M. A. A. (2025). *Checkerboard-free topology optimization for cellular materials via the finite-volume theory.* *Optimization and Engineering*. | ⭐⭐⭐ | Medium | Provides a comparative study between energy equivalence and mean-field theory approaches to topology optimization of periodic cellular materials. |
+| 6    | Santos Júnior, A.; Cavalcante, M. A. A. (2024). *Topology optimization of periodic cellular materials employing the finite-volume theory.* *Engineering Optimization*. | ⭐⭐⭐ | Medium | Extends FVT-based topology optimization to periodic cellular microstructures employing the energy equivalence. |
+| 7    | Araujo, M. V. O.; Lages, E. N.; Cavalcante, M. A. A. (2020a). *Checkerboard-free topology optimization for compliance minimization applying the finite-volume theory.* *Mechanics Research Communications*, v. 108, p. 103581. | ⭐⭐⭐ | Medium | Demonstrates checkerboard-free topology optimization using FVT for compliance minimization, complementing modern applications. |
+
 
