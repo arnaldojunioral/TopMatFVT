@@ -2,7 +2,7 @@
 
 This repository provides a MATLAB implementation of **topology optimization for periodic material microstructures**, based on the **Finite-Volume Theory (FVT)**. The algorithm computes the **homogenized constitutive matrix** of a periodic cell and optimizes its material distribution to achieve desired effective properties.
 
-Supported material interpolation models:
+Supported material interpolation methods:
 - **SIMP** (Solid Isotropic Material with Penalization)  
 - **RAMP** (Rational Approximation of Material Properties)
 
@@ -48,7 +48,7 @@ Run the main function:
 
 TopMatFVT(100, 100, 0.5, 3, [], []);      % Example with fixed penalization (penal factor = 3) and no filtering solution (..., [], [])
 TopMatFVT(100, 100, 0.5, 3, 2, 1);        % Example with fixed penalization (penal factor = 3) and sensitivity filter (filter radius rfil = 2 and filter type ft = 1)
-TopMatFVT(100, 100, 0.5, 1:3, 2, 2);      % Example with continuation scheme (penal factor = 1 to 3) and density filter (filter radius rfil = 2 and filter type ft = 2)
+TopMatFVT(100, 100, 0.5, 0:3, 2, 2);      % Example with continuation scheme (penal factor increases from 0 to 3 in steps of 1) and density filter (filter radius rfil = 2 and filter type ft = 2)
 
 ````
 
@@ -62,7 +62,7 @@ The table below summarizes the main input parameters considered in the simulatio
 | nu        | 0.3   | Poisson's ratio |
 | ctp       | 3     | Objective function: 1 (shear modulus), 2 (bulk modulus), 3 (Poisson's ratio) |
 | R         | min(nx,ny)/6 | Radius of circular material heterogeneity |
-| mdl       | 'SIMP' | Material interpolation method: 'SIMP' or 'RAMP' |
+| mdl       | 'RAMP' | Material interpolation method: 'SIMP' or 'RAMP' |
 | eta       | 1/3   | Damping factor |
 | move      | 0.2   | Move limit for design variable update |
 
