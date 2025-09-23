@@ -36,9 +36,7 @@ Optional filtering techniques:
 
 ## 🚀 Getting started
 
-Save the [TopMatFVT.m](https://raw.githubusercontent.com/arnaldojunioral/TopMatFVT/main/TopMatFVT.m) program (17 kB) and launch MATLAB in the same directory. The program can be executed with the following command:
-
-Run the main function:
+Save the [TopMatFVT.m](https://raw.githubusercontent.com/arnaldojunioral/TopMatFVT/main/TopMatFVT.m) program (9.57 kB) and launch MATLAB in the same directory. The program can be executed with the following command:
 
 **TopMatFVT(nx, ny, volfrac, penal, rfil, ft)**
 
