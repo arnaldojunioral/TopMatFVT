@@ -91,7 +91,7 @@ For further details on the theoretical background and verification, please refer
       <img width="250" height="250" alt="Bulk modulus maximization" src="https://github.com/user-attachments/assets/869ee8cb-2cf9-4aba-896e-d710c8eded94" />
     </td>
     <td align="center" valign="top">
-      <strong>Poisson ratio minimization</strong><br>
+      <strong>Poisson's ratio minimization</strong><br>
       <img width="250" height="250" alt="Poisson's ratio minimization" src="https://github.com/user-attachments/assets/0756a229-cbe9-4301-9c0f-991c861e9062" />
     </td>
   </tr>
