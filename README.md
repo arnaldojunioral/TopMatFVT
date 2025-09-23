@@ -123,7 +123,7 @@ Project developed by:
 
 ## References
 
-The following table summarizes the six relevant references supporting the development of the proposed three-dimensional finite-volume theory. These works were selected based on their conceptual alignment with the present formulation, their methodological contributions, and their scientific impact.
+The following table summarizes the seven relevant references supporting the development of the proposed three-dimensional finite-volume theory. These works were selected based on their conceptual alignment with the present formulation, their methodological contributions, and their scientific impact.
 
 | Rank | Reference | Relevance to the Study | Scientific Impact | Justification |
 |------|-----------|----------------------|-----------------|---------------|
