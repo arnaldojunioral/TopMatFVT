@@ -84,15 +84,15 @@ For further details on the theoretical background and verification, please refer
   <tr>
     <td align="center" valign="top">
       <strong>Shear modulus maximization</strong><br>
-      <img width="200" height="200" alt="Shear modulus maximization" src="https://github.com/user-attachments/assets/2a03823e-f2d8-4459-9fa9-95ab7baacd67" />
+      <img width="250" height="250" alt="Shear modulus maximization" src="https://github.com/user-attachments/assets/2a03823e-f2d8-4459-9fa9-95ab7baacd67" />
     </td>
     <td align="center" valign="top">
       <strong>Bulk modulus maximization</strong><br>
-      <img width="200" height="200" alt="Bulk modulus maximization" src="https://github.com/user-attachments/assets/869ee8cb-2cf9-4aba-896e-d710c8eded94" />
+      <img width="250" height="250" alt="Bulk modulus maximization" src="https://github.com/user-attachments/assets/869ee8cb-2cf9-4aba-896e-d710c8eded94" />
     </td>
     <td align="center" valign="top">
       <strong>Poisson ratio minimization</strong><br>
-      <img width="200" height="200" alt="Poisson's ratio minimization" src="https://github.com/user-attachments/assets/0756a229-cbe9-4301-9c0f-991c861e9062" />
+      <img width="250" height="250" alt="Poisson's ratio minimization" src="https://github.com/user-attachments/assets/0756a229-cbe9-4301-9c0f-991c861e9062" />
     </td>
   </tr>
 </table>
