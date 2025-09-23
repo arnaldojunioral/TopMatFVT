@@ -38,7 +38,7 @@ Save the [TopMatFVT.m](https://raw.githubusercontent.com/arnaldojunioral/TopMatF
 
 **TopMatFVT(nx, ny, volfrac, penal, rfil, ft)**
 
-where **nx** and **ny** define the number of subvolumes along the x- and y-directions, respectively; **volfrac** is the volume fraction constraint of solid material; **penal** is the penalization factor (fixed or continuation scheme); **rfil** and **ft** are additional parameters (filter radius and filter type) for the filtering analysis.
+where **nx** and **ny** define the number of subvolumes along the x- and y-directions, respectively; **volfrac** is the volume fraction constraint of solid material; **penal** is the penalization factor (fixed or continuation scheme); **rfil** and **ft** are optional parameters (filter radius and filter type) for the filtering analysis.
 
 Run the main function:
 
