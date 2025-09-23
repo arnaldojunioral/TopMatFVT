@@ -2,7 +2,7 @@
 
 This repository provides a MATLAB implementation of **topology optimization for periodic material microstructures**, based on the **Finite-Volume Theory (FVT)**. The algorithm computes the **homogenized constitutive matrix** of a periodic cell and optimizes its material distribution to achieve desired effective properties.
 
-Supported interpolation models:
+Supported material interpolation models:
 - **SIMP** (Solid Isotropic Material with Penalization)  
 - **RAMP** (Rational Approximation of Material Properties)
 
@@ -15,22 +15,20 @@ Optional filtering techniques:
 ## 📌 Features
 
 - Periodic boundary conditions automatically enforced.  
-- Homogenization of effective elastic properties.  
+- Homogenization of periodic cellular materials based on the concept of Repeating Unit Cell (RUC).  
 - Objective function options:
   - **Shear modulus maximization**  
   - **Bulk modulus maximization**  
   - **Poisson’s ratio minimization**  
-- Continuation scheme on penalization factors.  
+- Either a continuation scheme applied to penalization factors or a fixed penalization approach.
 - Initial material heterogeneity is defined by a circular void.  
-- Optional **density/sensitivity filtering** for regularization.  
+- Optional **sensitivity/density filtering** for the solution's regularization.  
 
 ----
 
 ## ⚙️ Requirements
 
-- MATLAB **R2015 or later**.
-- GNU **Octave 6.4 or later**. 
-- No extra toolboxes required.  
+The implementation is fully compatible with both **MATLAB (R2015 or later)** and **GNU Octave (version 6.4 or later)**. No additional toolboxes are required, ensuring that the code can be executed in a standard installation of either environment.
 
 ----
 
@@ -40,7 +38,7 @@ Save the [TopMatFVT.m](https://raw.githubusercontent.com/arnaldojunioral/TopMatF
 
 **TopMatFVT(nx, ny, volfrac, penal, rfil, ft)**
 
-where **nx** and **ny** define the number of subvolumes along the x- and y-directions, respectively; **volfrac** is the volume fraction constraint of solid material; **penal** is the penalization factor; and **rfil** and **ft** are additional parameters (filter radius and filter type) for the filtering analysis.
+where **nx** and **ny** define the number of subvolumes along the x- and y-directions, respectively; **volfrac** is the volume fraction constraint of solid material; **penal** is the penalization factor (fixed or continuation scheme); **rfil** and **ft** are additional parameters (filter radius and filter type) for the filtering analysis.
 
 Run the main function:
 
@@ -48,13 +46,13 @@ Run the main function:
 
 % In the following examples, the model consists of a structured mesh discretized into 100 × 100 subvolumes, with a solid material volume fraction constrained to 50%.
 
-TopMatFVT(100, 100, 0.5, 3, [], []);      % Example with fixed penalization (penal factor = 3) and no filtering
-TopMatFVT(100, 100, 0.5, 3, 2, 1);        % Example with fixed penalization (penal factor = 3) and sensitivity filter (rfil = 2 and ft = 1)
-TopMatFVT(100, 100, 0.5, 1:3, 2, 2);      % Example with continuation scheme (penal factor = 1 to 3) and density filter (rfil = 2 and ft = 2)
+TopMatFVT(100, 100, 0.5, 3, [], []);      % Example with fixed penalization (penal factor = 3) and no filtering solution (..., [], [])
+TopMatFVT(100, 100, 0.5, 3, 2, 1);        % Example with fixed penalization (penal factor = 3) and sensitivity filter (filter radius rfil = 2 and filter type ft = 1)
+TopMatFVT(100, 100, 0.5, 1:3, 2, 2);      % Example with continuation scheme (penal factor = 1 to 3) and density filter (filter radius rfil = 2 and filter type ft = 2)
 
 ````
 
-The table below summarizes the key input parameters used in the simulation, including beam geometry, material properties, loading conditions, and visualization settings.
+The table below summarizes the main input parameters considered in the simulations, including the material properties, model settings, objective function, and numerical update controls.
 
 ##### Model Parameters
 
