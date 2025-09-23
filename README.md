@@ -6,10 +6,9 @@ Supported interpolation models:
 - **SIMP** (Solid Isotropic Material with Penalization)  
 - **RAMP** (Rational Approximation of Material Properties)
 
-Filtering techniques:
+Optional filtering techniques:
 - **Sensitivity filter**  
 - **Density filter**  
-- **No filter**
 
 ----
 
