@@ -8,7 +8,7 @@ This repository provides a **free** MATLAB implementation of a Topology Optimiza
 
 ## Getting started
 
-Save the [FVT3DELASTIC.m](https://raw.githubusercontent.com/arnaldojunioral/TopMatFVT/main/TopMatFVT.m) program (17 kB) and launch MATLAB in the same directory. The program can be executed with the following command:
+Save the [TopMatFVT.m](https://raw.githubusercontent.com/arnaldojunioral/TopMatFVT/main/TopMatFVT.m) program (17 kB) and launch MATLAB in the same directory. The program can be executed with the following command:
 
 **TopMatFVT(n1, n2, n3)**
 
