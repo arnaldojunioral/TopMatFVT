@@ -78,6 +78,8 @@ The table below summarizes the key input parameters used in the simulation, incl
 
 ## 🎥 Topology evolution
 
+<p align="center"><strong> No filtering Solutions</strong></p>
+
 <table align="center">
   <tr>
     <td align="center" valign="top">
@@ -89,8 +91,8 @@ The table below summarizes the key input parameters used in the simulation, incl
       <img width="300" height="300" alt="Bulk modulus maximization" src="https://github.com/user-attachments/assets/869ee8cb-2cf9-4aba-896e-d710c8eded94" />
     </td>
     <td align="center" valign="top">
-      <strong>Poisson ration minimization</strong><br>
-      <img width="300" height="300" alt="Poisson ration minimization" src="https://github.com/user-attachments/assets/0756a229-cbe9-4301-9c0f-991c861e9062" />
+      <strong>Poisson ratio minimization</strong><br>
+      <img width="300" height="300" alt="Poisson ratio minimization" src="https://github.com/user-attachments/assets/0756a229-cbe9-4301-9c0f-991c861e9062" />
     </td>
   </tr>
 </table>
