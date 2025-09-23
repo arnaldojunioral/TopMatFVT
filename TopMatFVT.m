@@ -208,7 +208,7 @@ fprintf('itemax: %i\n',itemax);
 figure(1);
 colormap(gray);imagesc(1-xPhys');clim([0 1]);axis equal;axis off;          % optimized topology
 figure(2);
-colormap(gray);imagesc(repmat(1-xPhys',3,3));clim([0 1]);axis equal off;   % 3x3 cells
+colormap(gray);imagesc(repmat(1-xPhys',3,3));caxis([0 1]);axis equal off;   % 3x3 cells
 
 %___________________________________________________INITIAL MATERIAL DESIGN
 function x = InitialMaterialDesign(nx,ny,R,volfrac)
@@ -263,3 +263,4 @@ end
 % Create sparse matrix and compute row sums
 H = sparse(iH,jH,sH);
 Hs = H./sum(H,2);
+
