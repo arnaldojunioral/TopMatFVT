@@ -48,11 +48,12 @@ Run the main function:
 
 ```matlab
 
+% In the following examples, the model consists of a structured mesh discretized into 100 × 100 subvolumes, with a solid material volume fraction constrained to 50%.
+
 TopMatFVT(100, 100, 0.5, 3, [], []);      % Example with fixed penalization (penal factor = 3) and no filtering
 TopMatFVT(100, 100, 0.5, 3, 2, 1);        % Example with fixed penalization (penal factor = 3) and sensitivity filter (rfil = 2 and ft = 1)
 TopMatFVT(100, 100, 0.5, 1:3, 2, 2);      % Example with continuation scheme (penal factor = 1 to 3) and density filter (rfil = 2 and ft = 2)
 
-% The model corresponds to a structured mesh discretized into 100 × 100 subvolumes with a volume fraction constraint of solid material of 50%.
 ````
 
 The table below summarizes the key input parameters used in the simulation, including beam geometry, material properties, loading conditions, and visualization settings.
