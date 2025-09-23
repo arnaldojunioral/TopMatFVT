@@ -66,9 +66,10 @@ The table below summarizes the main input parameters considered in the simulatio
 | eta       | 1/3   | Damping factor |
 | move      | 0.2   | Move limit for design variable update |
 
-<!-- ## Documentation -->
+## 📘 Documentation  
 
-<!-- The journal article uses the TopMatFVT to generate the examples presented. -->
+The journal articles use **TopMatFVT** to generate the numerical examples presented.  
+For further details on the theoretical background, implementation, and validation, please refer to the article:
 
 ----
 
