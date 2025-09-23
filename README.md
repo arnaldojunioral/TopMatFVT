@@ -1,4 +1,4 @@
-# TopMatFVT
+# ✨ TopMatFVT
 
 This repository provides a MATLAB implementation of **topology optimization for periodic material microstructures**, based on the **Finite-Volume Theory (FVT)**. The algorithm computes the **homogenized constitutive matrix** of a periodic cell and optimizes its material distribution to achieve desired effective properties.
 
