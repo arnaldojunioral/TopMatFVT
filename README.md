@@ -70,13 +70,13 @@ The table below summarizes the key input parameters used in the simulation, incl
 
 <!-- ## Documentation -->
 
-<!-- The journal article uses the FVT3DELASTIC to generate the examples presented. -->
+<!-- The journal article uses the TopMatFVT to generate the examples presented. -->
 
 ----
 
 ## 🎥 Topology evolution
 
-<p align="center"><strong> No filtering Solutions</strong></p>
+<p align="center"><strong> No filtering solutions</strong></p>
 
 <table align="center">
   <tr>
