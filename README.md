@@ -84,9 +84,6 @@ Your contributions help improve the reliability and usability of this project fo
 Project developed by:
 
 * Arnaldo dos Santos Júnior  arnaldo@ctec.ufal.br
-* Marcelo Victor Oliveira Araujo marcelo.vitor.o.a@gmail.com
-* Romildo dos Santos Escarpini Filho romildo.escarpini@penedo.ufal.br
-* Eduardo Nobre Lages enl@ctec.ufal.br
 * Márcio André Araújo Cavalcante marcio.cavalcante@ceca.ufal.br
 
 ## References
