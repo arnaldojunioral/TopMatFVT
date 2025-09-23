@@ -1,72 +1,101 @@
 # TopMatFVT
 
-This repository provides a **free** MATLAB implementation of a Topology Optimization of Periodic Materials using the Standard Finite-Volume Theory (FVT) Formulation.. The code offers:
+This repository provides a MATLAB implementation of **topology optimization for periodic material microstructures**, based on the **Finite-Volume Theory (FVT)**. The algorithm computes the **homogenized constitutive matrix** of a periodic cell and optimizes its material distribution to achieve desired effective properties.
 
-* an efficient and flexible code for conducting numerical investigations of periodic cellular materials;
-* stress and displacement analyses through a local equilibrium-based formulation; and
-* easy extension to other problems involving three-dimensional structural components.
+Supported interpolation models:
+- **SIMP** (Solid Isotropic Material with Penalization)  
+- **RAMP** (Rational Approximation of Material Properties)
 
-## Getting started
+Filtering techniques:
+- **Sensitivity filter**  
+- **Density filter**  
+- **No filter**
+
+----
+
+## 📌 Features
+
+- Periodic boundary conditions automatically enforced.  
+- Homogenization of effective elastic properties.  
+- Objective function options:
+  - **Shear modulus maximization**  
+  - **Bulk modulus maximization**  
+  - **Poisson’s ratio minimization**  
+- Continuation scheme on penalization factors.  
+- Initial material heterogeneity is defined by a circular void.  
+- Optional **density/sensitivity filtering** for regularization.  
+
+----
+
+## ⚙️ Requirements
+
+- MATLAB **R2015 or later**.
+- GNU **Octave 6.4 or later**. 
+- No extra toolboxes required.  
+
+----
+
+## 🚀 Getting started
 
 Save the [TopMatFVT.m](https://raw.githubusercontent.com/arnaldojunioral/TopMatFVT/main/TopMatFVT.m) program (17 kB) and launch MATLAB in the same directory. The program can be executed with the following command:
 
-**TopMatFVT(n1, n2, n3)**
+Run the main function:
 
-where **n1**, **n2**, and **n3** define the number of subvolumes along the x<sub>1</sub>, x<sub>2</sub>, and x<sub>3</sub> directions, respectively. These parameters specify the discretization of the three-dimensional domain, as illustrated in the figure below.
-<!-- <p align="center">
-<img width="350" height="350" alt="image" src="https://github.com/user-attachments/assets/3d92838e-2fcb-40f7-b0da-80d891ec62d6" />
-</p> -->
-<p align="center">
-<img width="510" height="280" alt="image" src="https://github.com/user-attachments/assets/9efeaf36-5ae0-45d4-b3fc-7a83c7a8b952" />
-</p>
+**TopMatFVT(nx, ny, volfrac, penal, rfil, ft)**
+
+where **nx** and **ny** define the number of subvolumes along the x- and y-directions, respectively; **volfrac** is the volume fraction constraint of solid material; **penal** is the penalization factor; and **rfil** and **ft** are additional parameters (filter radius and filter type) for the filtering analysis.
+
+Run the main function:
+
+```matlab
+
+TopMatFVT(100, 100, 0.5, 3, [], []);      % No filtering
+TopMatFVT(100, 100, 0.5, 3, 2, 1);        % Example with fixed penalization and sensitivity filter (rfil = 2 and ft = 1)
+TopMatFVT(100, 100, 0.5, 1:3, 2, 2);      % Example with continuation scheme (penal factor = 1 to 3) and density filter (rfil = 2 and ft = 2)
+
+% corresponds to a structured mesh discretized into 100 × 100 subvolumes with a volume fraction constraint of solid material of 50%.
+````
 
 The table below summarizes the key input parameters used in the simulation, including beam geometry, material properties, loading conditions, and visualization settings.
 
-#### Model Parameters
+##### Model Parameters
 
-| Parameter       | Description                                          | Unit             |
-|-----------------|------------------------------------------------------|------------------|
-| L             | Beam length                                          | mm               |
-| H             | Beam height                                          | mm               |
-| B             | Beam width                                           | mm               |
-| E             | Young's modulus (material stiffness)                 | MPa              |
-| nu            | Poisson's ratio                                      | –                |
-| P             | Applied load (negative indicates downward force)     | N                |
-| pb            | Problem: 'flexure', 'torsion', or 'torsion-flexure' | –          |
-| amp           | Amplification factor for deformation visualization   | –                | 
+| Parameter | Value | Description |
+|-----------|-------|-------------|
+| E0        | 1.0   | Young's modulus of solid material |
+| nu        | 0.3   | Poisson's ratio |
+| ctp       | 3     | Objective function: 1 (shear modulus), 2 (bulk modulus), 3 (Poisson's ratio) |
+| R         | min(nx,ny)/6 | Radius of circular material heterogeneity |
+| mdl       | 'SIMP' | Material interpolation method: 'SIMP' or 'RAMP' |
+| eta       | 1/3   | Damping factor |
+| move      | 0.2   | Move limit for design variable update |
 
 <!-- ## Documentation -->
 
 <!-- The journal article uses the FVT3DELASTIC to generate the examples presented. -->
 
-## Example: 3D Cantilever beam
+----
 
-This example presents a standard benchmark problem involving a three-dimensional cantilever beam. The analysis domain and boundary conditions, shown in the figure below, are used to verify the functionality of the FVT3DELASTIC code.
-
-<p align="center">
-<img width="400" height="206" alt="image" src="https://github.com/user-attachments/assets/56962135-65c7-44d0-ba56-1cc5c18a9910" />
-</p>
-
-The parameters used in the analysis are listed in the table below. The function call **FVT3DELASTIC(75, 16, 16)** corresponds to a structured mesh discretized into 75 × 16 × 16 subvolumes.
-
-| L   | H   | B   | E      | ν   | P    | pb       | amp   |
-|-----|-----|-----|--------|-----|------|----------|-------|
-| 500 | 100 | 100 | 150000 | 0.3 | 2000 | 'flexure'  | 1000  |
-
-#### Output
+## 🎥 Topology evolution
 
 <table align="center">
   <tr>
     <td align="center" valign="top">
-      <strong>Deformed structure</strong><br>
-      <img width="370" height="200" alt="Deformed" src="https://github.com/user-attachments/assets/55c63898-61b3-42af-91ae-f9514570bcb1" />
+      <strong>Shear modulus maximization</strong><br>
+      <img width="300" height="300" alt="Shear modulus maximization" src="https://github.com/user-attachments/assets/2a03823e-f2d8-4459-9fa9-95ab7baacd67" />
     </td>
     <td align="center" valign="top">
-      <strong>Stress fields</strong><br>
-      <img width="900" height="300" alt="Stress fields" src="https://github.com/user-attachments/assets/1a826ba6-0fc4-4749-b6d4-4bfef5d56534" />
+      <strong>Bulk modulus maximization</strong><br>
+      <img width="300" height="300" alt="Bulk modulus maximization" src="https://github.com/user-attachments/assets/869ee8cb-2cf9-4aba-896e-d710c8eded94" />
+    </td>
+    <td align="center" valign="top">
+      <strong>Poisson ration minimization</strong><br>
+      <img width="300" height="300" alt="Poisson ration minimization" src="https://github.com/user-attachments/assets/0756a229-cbe9-4301-9c0f-991c861e9062" />
     </td>
   </tr>
 </table>
+
+----
 
 ## Error reporting
 
@@ -79,12 +108,16 @@ Please feel free to:
 
 Your contributions help improve the reliability and usability of this project for the research community.
 
+----
+
 ## Authors
 
 Project developed by:
 
 * Arnaldo dos Santos Júnior  arnaldo@ctec.ufal.br
 * Márcio André Araújo Cavalcante marcio.cavalcante@ceca.ufal.br
+
+----
 
 ## References
 
