@@ -68,7 +68,7 @@ The table below summarizes the main input parameters considered in the simulatio
 
 ## 📘 Documentation
 
-For further details on the theoretical background and verification, please refer to the following articles:
+For further details on the theoretical background, please refer to the following articles:
 
 - **Santos Júnior, A.** & **Cavalcante, M. A. A.**, (2025). *Checkerboard-free topology optimization for cellular materials via the finite-volume theory*. *Optimization and Engineering*. [https://doi.org/10.1007/s11081-025-09988-7](https://doi.org/10.1007/s11081-025-09988-7)
 
