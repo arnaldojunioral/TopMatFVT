@@ -61,7 +61,7 @@ The table below summarizes the main input parameters considered in the simulatio
 | E0        | 1.0   | Young's modulus of solid material |
 | nu        | 0.3   | Poisson's ratio |
 | ctp       | 3     | Objective function: 1 (shear modulus), 2 (bulk modulus), 3 (Poisson's ratio) |
-| R         | min(nx,ny)/6 | Radius of circular material heterogeneity |
+| R         | min(n1, n2)/6 | Radius of circular material heterogeneity |
 | mdl       | 'RAMP' | Material interpolation method: 'SIMP' or 'RAMP' |
 | eta       | 1/3   | Damping factor |
 | move      | 0.2   | Move limit for design variable update |
