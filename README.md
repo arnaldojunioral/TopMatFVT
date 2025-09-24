@@ -36,9 +36,9 @@ The implementation is fully compatible with both **MATLAB (R2015 or later)** and
 
 Save the [TopMatFVT.m](https://raw.githubusercontent.com/arnaldojunioral/TopMatFVT/main/TopMatFVT.m) program (9.57 kB) and launch MATLAB in the same directory. The program can be executed with the following command:
 
-**TopMatFVT(nx, ny, volfrac, penal, rfil, ft)**
+**TopMatFVT(n1, n2, volfrac, penal, rfil, ft)**
 
-where **nx** and **ny** define the number of subvolumes along the x- and y-directions, respectively; **volfrac** is the volume fraction constraint of solid material; **penal** is the penalization factor (fixed or continuation scheme); **rfil** and **ft** are optional parameters (filter radius and filter type) for the filtering analysis.
+where **n2** and **n2** define the number of subvolumes along the y1 and y2-directions, respectively; **volfrac** is the volume fraction constraint of solid material; **penal** is the penalization factor (fixed or continuation scheme); **rfil** and **ft** are optional parameters (filter radius and filter type) for the filtering analysis.
 
 Run the main function:
 
