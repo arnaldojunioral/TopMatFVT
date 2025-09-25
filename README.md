@@ -24,7 +24,8 @@ Optional filtering techniques:
 - A circular void defines initial material heterogeneity.  
 - Optional **sensitivity/density filtering** for the solution's regularization.  
 
-<img width="1739" height="588" alt="image" src="https://github.com/user-attachments/assets/1997df8b-c7dd-4cfe-aa78-f0a8747e3013" />
+
+<img width="1500" height="350" alt="image" src="https://github.com/user-attachments/assets/1997df8b-c7dd-4cfe-aa78-f0a8747e3013" />
 
 ----
 
