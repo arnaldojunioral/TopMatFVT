@@ -20,9 +20,11 @@ Optional filtering techniques:
   - **Shear modulus maximization**  
   - **Bulk modulus maximization**  
   - **Poisson’s ratio minimization**  
-- Either a continuation scheme applied to penalization factors or a fixed penalization approach.
-- Initial material heterogeneity is defined by a circular void.  
+- It supports either a continuation scheme applied to penalization factors or a fixed penalization approach.
+- A circular void defines initial material heterogeneity.  
 - Optional **sensitivity/density filtering** for the solution's regularization.  
+
+<img width="1739" height="588" alt="image" src="https://github.com/user-attachments/assets/1997df8b-c7dd-4cfe-aa78-f0a8747e3013" />
 
 ----
 
@@ -38,7 +40,7 @@ Save the [TopMatFVT.m](https://raw.githubusercontent.com/arnaldojunioral/TopMatF
 
 **TopMatFVT(n1, n2, volfrac, penal, rfil, ft)**
 
-where **n2** and **n2** define the number of subvolumes along the y1 and y2-directions, respectively; **volfrac** is the volume fraction constraint of solid material; **penal** is the penalization factor (fixed or continuation scheme); **rfil** and **ft** are optional parameters (filter radius and filter type) for the filtering analysis.
+where **n1** and **n2** define the number of subvolumes along the y1 and y2-directions, respectively; **volfrac** is the volume fraction constraint of solid material; **penal** is the penalization factor (fixed or continuation scheme); **rfil** and **ft** are optional parameters (filter radius and filter type) for the filtering analysis.
 
 Run the main function:
 
