@@ -24,8 +24,7 @@ Optional filtering techniques:
 - A circular void defines initial material heterogeneity.  
 - Optional **sensitivity/density filtering** for the solution's regularization.  
 
-
-<img width="1500" height="350" alt="image" src="https://github.com/user-attachments/assets/1997df8b-c7dd-4cfe-aa78-f0a8747e3013" />
+<img width="750" height="291" alt="image" src="https://github.com/user-attachments/assets/8ff29c57-1db2-4f12-8f63-6b51e6227403" />
 
 ----
 
@@ -87,15 +86,15 @@ For further details on the theoretical background, please refer to the following
   <tr>
     <td align="center" valign="top">
       <strong>Shear modulus maximization</strong><br>
-      <img width="250" height="250" alt="Shear modulus maximization" src="https://github.com/user-attachments/assets/2a03823e-f2d8-4459-9fa9-95ab7baacd67" />
+      <img width="280" height="280" alt="Shear modulus maximization" src="https://github.com/user-attachments/assets/2a03823e-f2d8-4459-9fa9-95ab7baacd67" />
     </td>
     <td align="center" valign="top">
       <strong>Bulk modulus maximization</strong><br>
-      <img width="250" height="250" alt="Bulk modulus maximization" src="https://github.com/user-attachments/assets/869ee8cb-2cf9-4aba-896e-d710c8eded94" />
+      <img width="280" height="280" alt="Bulk modulus maximization" src="https://github.com/user-attachments/assets/869ee8cb-2cf9-4aba-896e-d710c8eded94" />
     </td>
     <td align="center" valign="top">
       <strong>Poisson's ratio minimization</strong><br>
-      <img width="250" height="250" alt="Poisson's ratio minimization" src="https://github.com/user-attachments/assets/0756a229-cbe9-4301-9c0f-991c861e9062" />
+      <img width="280" height="280" alt="Poisson's ratio minimization" src="https://github.com/user-attachments/assets/0756a229-cbe9-4301-9c0f-991c861e9062" />
     </td>
   </tr>
 </table>
