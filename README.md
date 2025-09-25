@@ -125,7 +125,7 @@ Project developed by:
 
 ## References
 
-The following table summarizes the seven relevant references supporting the development of the proposed three-dimensional finite-volume theory. These works were selected based on their conceptual alignment with the present formulation, their methodological contributions, and their scientific impact.
+The following table summarizes the eight relevant references supporting the development of the proposed three-dimensional finite-volume theory. These works were selected based on their conceptual alignment with the present formulation, their methodological contributions, and their scientific impact.
 
 | Rank | Reference | Relevance to the Study | Scientific Impact | Justification |
 |------|-----------|----------------------|-----------------|---------------|
@@ -136,5 +136,6 @@ The following table summarizes the seven relevant references supporting the deve
 | 5    | Santos Júnior, A.; Cavalcante, M. A. A. (2025). *Checkerboard-free topology optimization for cellular materials via the finite-volume theory.* *Optimization and Engineering*. | ⭐⭐⭐ | Medium | Provides a comparative study between energy equivalence and mean-field theory approaches to topology optimization of periodic cellular materials. |
 | 6    | Santos Júnior, A.; Cavalcante, M. A. A. (2024). *Topology optimization of periodic cellular materials employing the finite-volume theory.* *Engineering Optimization*. | ⭐⭐⭐ | Medium | Extends FVT-based topology optimization to periodic cellular microstructures employing the energy equivalence. |
 | 7    | Araujo, M. V. O.; Lages, E. N.; Cavalcante, M. A. A. (2020a). *Checkerboard-free topology optimization for compliance minimization applying the finite-volume theory.* *Mechanics Research Communications*, v. 108, p. 103581. | ⭐⭐⭐ | Medium | Demonstrates checkerboard-free topology optimization using FVT for compliance minimization, complementing modern applications. |
+| 8    | Santos Júnior, A.; Cavalcante, M. A. A. (2024). *checkerboard-free topology optimization using FVT for compliance minimization, complementing modern applications.* *F1000Research*, v. 13, p. 805. | ⭐⭐⭐ | Medium | Presents an open-access contribution on FVT-based topology optimization of two-dimensional structures, highlighting accessibility and reproducibility of methods. |
 
 
